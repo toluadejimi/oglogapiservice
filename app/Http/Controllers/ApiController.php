@@ -42,7 +42,7 @@ class ApiController extends Controller
             ]);
         }
 
-        User::where('email', $request->email)->increment('total_money', $request->amount) ?? null;
+        User::where('email', $request->email)->increment('money', $request->amount) ?? null;
 
         Nowpayment::where('invoice_id', $request->order_id)->update(['payment_status'=> "Success"]);
 
