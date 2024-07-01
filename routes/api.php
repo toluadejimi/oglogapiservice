@@ -20,4 +20,4 @@ Route::any('e-fund',  [ApiController::class,'e_fund']);
 Route::any('e-check',  [ApiController::class,'e_check']);
 
 
-Route::any('verify',  [ProductController::class,'verify_username']);
+Route::any('verify',  [ApiController::class,'verify_username']);
